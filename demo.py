@@ -12,7 +12,7 @@ import pygame
 import sys
 
 # INITIALIZE PYGAME
-# Necessary for all Pygame programs. Do not change this line.
+# Necessary for all Pygame programs. Initilize pygame. Do not change this line.
 pygame.init()
 
 # SET UP DISPLAY AREA
@@ -25,7 +25,7 @@ pygame.display.set_caption("My Program")    # CHANGE THIS LINE FOR WINDOW TITLE
 # COLOUR NAME DEFINITIONS
 # Define easy-to-remember names for colours. Note these variable names are in 
 # ALL CAPS, denoting CONSTANTS that will not change throughout the program.
-#
+#WHITE means constant that will never change, 255 is max value
 # Define colours manually using RGB values from https://rgbcolorpicker.com/
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -38,6 +38,7 @@ GREY = pygame.Color("gray67")
 # contents over and over again until some condition causes it to quit.
 # The `running` variable and `while` loop sets this up. 
 
+# MAIN LOOP
 running = True
 
 while running:
@@ -46,6 +47,7 @@ while running:
     # only condition to end the program is when the user closes the
     # Pygame graphics window. When the user closes the window, this
     # sets the `running` variable to `False` and stop Pygame.
+    #when user closes py window, it stops
     # Do not remove this section.
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
